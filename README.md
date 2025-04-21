@@ -1,5 +1,11 @@
 # BrilhoCompartilhado
 
+Este é um aplicativo móvel simples desenvolvido em React Native com Expo que oferece duas funcionalidades principais:
+
+Controle de Brilho: ajuste dinâmico do brilho da tela por meio de um slider.
+
+Compartilhamento de Texto: geração e compartilhamento de um arquivo de texto usando expo-sharing.
+
 ## Orientações de Instalação
 
 ### 1. Criando o projeto do zero
