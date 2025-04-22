@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {
   View,
+  Text,
   StyleSheet,
   FlatList,
   StatusBar,
@@ -46,16 +47,9 @@ const HomeScreen: React.FC = () => {
       />
 
       <View style={styles.header}>
-        <View style={styles.headerTitle}>
-          <Ionicons name="journal-outline" size={24} color={theme.colors.primary} />
-          <View style={styles.titleSpacer} />
-          <Ionicons
-            name="journal"
-            size={24}
-            color={theme.colors.primary}
-          />
-        </View>
-
+        <Text style={[styles.headerText, { color: theme.colors.text }]}>
+          BrilhoCompartiilhado
+        </Text>
         <TouchableOpacity onPress={toggleDarkMode} style={styles.themeToggle}>
           <Ionicons
             name={isDarkMode ? 'sunny-outline' : 'moon-outline'}
@@ -108,6 +102,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     paddingTop: 16,
     paddingBottom: 8,
+  },
+  headerText: {
+    fontSize: 18,
+    fontWeight: 'bold',
   },
   headerTitle: {
     flexDirection: 'row',
